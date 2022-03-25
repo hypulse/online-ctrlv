@@ -16,25 +16,27 @@ export default function App() {
       <Box sx={{ minHeight: "100vh" }}>
         <Grid container>
           <Grid item xs={12}>
-            <Box sx={{ pt: 6, pb: 4 }}>
+            <Box sx={{ pt: 6, pb: 2 }}>
               <Container maxWidth="sm">
-                <AppInfo></AppInfo>
+                <Box sx={{ pl: 4, pr: 4 }}>
+                  <AppInfo></AppInfo>
+                </Box>
               </Container>
             </Box>
           </Grid>
           <Grid item xs={12}>
             <Container maxWidth="md">
-              <Box sx={{ p: 2 }}>
+              <Box sx={{ p: 1 }}>
                 <CopyInput></CopyInput>
               </Box>
-              <Box sx={{ p: 2 }}>
+              <Box sx={{ p: 1 }}>
                 <CopyButton></CopyButton>
               </Box>
             </Container>
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ pt: 6, pb: 4 }}>
+      <Box sx={{ pt: 2, pb: 2 }}>
         <Footer></Footer>
       </Box>
     </div>

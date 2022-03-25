@@ -2,25 +2,25 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import ShareIcon from "@mui/icons-material/Share";
 
 export default function NavBar() {
   return (
     <div>
-      <AppBar position="static">
+      <AppBar
+        position="absolute"
+        color="default"
+        elevation={0}
+        sx={{
+          position: "relative",
+          borderBottom: (t) => `1px solid ${t.palette.divider}`,
+        }}
+      >
         <Toolbar>
-          <Typography
-            variant="h6"
-            sx={{ flexGrow: 1, fontWeight: "bold" }}
-            noWrap
-          >
-            OnlineCtrlV
+          <Typography variant="h6" color="inherit" sx={{ flexGrow: 1 }} noWrap>
+            Online CtrlV
           </Typography>
-          <IconButton color="inherit" sx={{ ml: 2 }}>
-            <GitHubIcon />
-          </IconButton>
-          <IconButton color="inherit" sx={{ ml: 2 }}>
+          <IconButton>
             <ShareIcon />
           </IconButton>
         </Toolbar>
