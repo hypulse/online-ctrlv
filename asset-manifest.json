@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/online-ctrlv/static/js/main.9695cfc6.js",
+    "main.js": "/online-ctrlv/static/js/main.f8876c22.js",
     "index.html": "/online-ctrlv/index.html",
-    "main.9695cfc6.js.map": "/online-ctrlv/static/js/main.9695cfc6.js.map"
+    "main.f8876c22.js.map": "/online-ctrlv/static/js/main.f8876c22.js.map"
   },
   "entrypoints": [
-    "static/js/main.9695cfc6.js"
+    "static/js/main.f8876c22.js"
   ]
 }
