@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import { Grid } from "@mui/material";
 import NativeSelect from "@mui/material/NativeSelect";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import { copyToClipboard } from "../modules";
 
 export default function CopyButton() {
   return (
@@ -24,7 +25,11 @@ function A() {
   return (
     <div>
       <FormControl fullWidth>
-        <NativeSelect defaultValue={100} sx={{ minHeight: "40px" }}>
+        <NativeSelect
+          id="select-value"
+          defaultValue={100}
+          sx={{ minHeight: "40px" }}
+        >
           {options.map((item, idx) => (
             <option value={item} key={idx}>
               {item}번
@@ -37,12 +42,28 @@ function A() {
 }
 
 function B() {
+  function onCLickCopy() {
+    const textValue = document.querySelector("#text-value").value;
+    const selectValue = parseInt(document.querySelector("#select-value").value);
+    if (textValue != "") {
+      let t = "";
+      for (var i = 0; i < selectValue; i++) {
+        t += textValue;
+      }
+      copyToClipboard(t, "클립보드에 텍스트가 복사되었습니다.");
+    }
+  }
+
   return (
     <div>
       <Button
         variant="contained"
         startIcon={<ContentCopyIcon />}
         sx={{ minHeight: "40px" }}
+        disableElevation
+        onClick={() => {
+          onCLickCopy();
+        }}
         fullWidth
       >
         복사하기

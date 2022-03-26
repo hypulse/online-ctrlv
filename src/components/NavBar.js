@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import ShareIcon from "@mui/icons-material/Share";
 
-export default function NavBar() {
+export default function NavBar({ onClickShare }) {
   return (
     <div>
       <AppBar
@@ -20,7 +20,11 @@ export default function NavBar() {
           <Typography variant="h6" color="inherit" sx={{ flexGrow: 1 }} noWrap>
             Online CtrlV
           </Typography>
-          <IconButton>
+          <IconButton
+            onClick={() => {
+              onClickShare();
+            }}
+          >
             <ShareIcon />
           </IconButton>
         </Toolbar>
