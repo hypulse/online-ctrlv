@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <Typography align="center" color="text.secondary" component="p">
-        Copyright © Hypulse 2022.
+        &copy; {new Date().getFullYear()} Oneline CtrlV
       </Typography>
     </footer>
   );

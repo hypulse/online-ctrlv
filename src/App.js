@@ -18,13 +18,13 @@ function onClickShare() {
 
 export default function App() {
   return (
-    <div>
+    <>
       <CssBaseline />
       <NavBar onClickShare={onClickShare}></NavBar>
       <Box sx={{ minHeight: "100vh" }}>
         <Grid container>
           <Grid item xs={12}>
-            <Box sx={{ pt: 8, pb: 4 }}>
+            <Box sx={{ pb: 4, pt: 8 }}>
               <Container maxWidth="sm">
                 <Box sx={{ pl: 4, pr: 4 }}>
                   <AppInfo></AppInfo>
@@ -44,9 +44,9 @@ export default function App() {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ pt: 8, pb: 4 }}>
+      <Box sx={{ pt: 8, pb: 1 }}>
         <Footer></Footer>
       </Box>
-    </div>
+    </>
   );
 }
