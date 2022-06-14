@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/online-ctrlv/static/js/main.71d35643.js",
+    "main.js": "/online-ctrlv/static/js/main.cbe0967d.js",
+    "static/media/wordmark.png": "/online-ctrlv/static/media/wordmark.1b25d6a22f7652158ae6.png",
     "index.html": "/online-ctrlv/index.html",
-    "main.71d35643.js.map": "/online-ctrlv/static/js/main.71d35643.js.map"
+    "main.cbe0967d.js.map": "/online-ctrlv/static/js/main.cbe0967d.js.map"
   },
   "entrypoints": [
-    "static/js/main.71d35643.js"
+    "static/js/main.cbe0967d.js"
   ]
 }
